@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0A1F44;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        
+        
+
+        .login-container {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 800px;
+            max-width: 100%;
+        }
+
+        .login-container .graphic {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .login-container .graphic img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .login-container .login-form {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .login-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .login-form .input-group {
+            margin-bottom: 15px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #1A2B50;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .login-form input[type="text"]:focus,
+        .login-form input[type="password"]:focus {
+            outline: none;
+            border-color: #4C8BF5;
+        }
+
+        .login-form .social-login {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form .social-login button {
+            background-color: #4C8BF5;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .login-form .social-login button:hover {
+            background-color: #366DBD;
+        }
+
+        .login-form .divider {
+            text-align: center;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .login-form .divider::before,
+        .login-form .divider::after {
+            content: '';
+            display: inline-block;
+            width: 30%;
+            height: 1px;
+            background-color: #666;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .login-form .login-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form .login-actions input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .login-form .login-actions a {
+            color: #4C8BF5;
+            text-decoration: none;
+        }
+
+        .login-form .login-actions a:hover {
+            text-decoration: underline;
+        }
+
+        .login-form .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-form .buttons button {
+            background-color: #4C8BF5;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            flex: 1;
+            margin: 0 5px;
+        }
+
+        .login-form .buttons button:hover {
+            background-color: #366DBD;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html" >Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+    
+
+    <div class="login-container">
+        <div class="graphic">
+            <img src="sheld1.png" alt="Security Graphic"> <!-- Replace with your graphic image -->
+        </div>
+        <div class="login-form">
+            <h2>Welcome to SPY-CAMERA-DETECTOR</h2>
+            <p>Please login with your personal account information.</p>
+
+            <div class="social-login">
+                <button>Sign in with Google</button>
+            </div>
+
+            <div class="divider">OR</div>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="login-actions">
+                    <div>
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Get Started</button>
+                    <button type="button">Register</button>
+                </div>
+            </form>
+
+    <script src="logn.js"></script>
+        </div>
+    </div>
+
+</body>
+</html>
